@@ -1,0 +1,28 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "run-p --print-label watch-css serve",
+    "serve": "live-server --ignorePattern=.*\\.scss",
+    "watch-css": "nodemon -e scss --exec \"npm run build-css\"",
+    "build-css": "node-sass --output-style compressed src/css/main.scss src/css/main.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PhentomPT/website.git"
+  },
+  "author": "PhentomPT",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PhentomPT/website/issues"
+  },
+  "homepage": "https://github.com/PhentomPT/website#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "node-sass": "^4.13.1",
+    "nodemon": "^2.0.3",
+    "npm-run-all": "^4.1.5"
+  }
+}

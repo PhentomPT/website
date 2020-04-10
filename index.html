@@ -1,102 +1,49 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Phentom - Web Developer</title>
-        <meta http-equiv="Cache-Control: max-age=2592000" content="public">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#535353">
-        <link rel="icon" type="image/png" href="src/images/favicon.png">
-        <link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff|Roboto+Condensed" rel="stylesheet">
-        <!-- UIkit JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.35/js/uikit.min.js"></script>
+  <head>
+    <title>Phentom - Web Developer</title>
+    <meta http-equiv="Cache-Control: max-age=2592000" content="public">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
 
-        <link href="src/css/main.min.css" rel="stylesheet">
-    </head>
+    <link rel="icon" type="image/png" href="src/images/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff|Roboto+Condensed" rel="stylesheet">
+    <link href="https://cdn.materialdesignicons.com/5.0.45/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="src/css/main.min.css" rel="stylesheet">
+  </head>
     <body>
-        <!-- Introduction -->
-        <div class="ph-container-grey">
-            <div class="ph-content-container">
-                <h1>Phentom</h1>
-                <h2>Web Developer</h2>
-                <div class="ph-learn-more">
-                    <div class="ph-learn-more-text">Learn more <span class="ph-detail-blue">About Me</span></div>
-                    <a href="#About-Me" uk-scroll="offset: 80"><div class="ph-learn-more-arrow-down"></div></a>
-                </div>
+      <div class="bubble bubble--first"></div>
+      <div class="bubble bubble--second"></div>
+      <!-- <div class="bubble bubble--third"></div> -->
+      
+      <div class="content">
+        <nav>
+          <a href="mailto: phentom.net@gmail.com">
+            <div class="contact-me">
+              <span class="mdi mdi-comment"></span>Contact Me</a>
             </div>
-        </div>
-        
-        <!-- About Me -->
-        <div class="ph-container-blue">
-            <div class="ph-content-container">
-                <h3 id="About-Me">About Me</h3><br/>
-                <p>
-                    I've been a Web Developer for over 4 years and over 
-                    the time i had the chance to be involved in some 
-                    interesting projects that helped me grow professionally.
-                    <br/><br/>
-                    On my free time i like to study about new stuff that 
-                    comes up, exercise and be with my friends and family.
-                    <br/><br/> 
-                </p>
+          </a>
 
-                <div class="ph-learn-more">
-                    <div class="ph-learn-more-text">Check out my <span class="ph-detail-grey">Skill Set</span></div>
-                    <a href="#Skill-Set" uk-scroll="offset: 80"><div class="ph-learn-more-arrow-down"></div></a>
-                </div>
-                <br/>
+          <a href="https://github.com/PhentomPT">
+            <div class="social-link">
+              <span class="mdi mdi-github"></span>
             </div>
+          </a>
+        </nav>
+
+        <div class="block">
+          <div class="heading">
+            <div class="title">Phentom</div>
+            <div class="description">A passionate Web Developer from Portugal</div>
+          </div>
+
+          <div class="about-me">
+            I've been a Web Developer for over 6 years and over the years.<br/>
+            I had the chance to be involved in some interesting projects that helped me grow professionally.<br/>
+            On my free time i like to study about new stuff that comes up, exercise and be with my friends and family.
+          </div>
         </div>
-
-        <!-- Skill Set -->
-        <div class="ph-container-white">
-            <div class="ph-content-container">
-                <h3 id="Skill-Set">Skill Set</h3><br/>
-
-                <div class="ph-spliter">
-                    PHP<br/>
-                    Javascript<br/>
-                    HTML<br/>
-                    CSS<br/>
-                </div>
-
-                <div class="ph-spliter">
-                    NodeJS<br/>
-                    Angular<br/>
-                    Laravel<br/>
-                    CodeIgniter<br/>
-                    Ionic<br/>
-                </div>
-                
-                <br/><br/>
-
-                <p class="ph-detail-grey">And more...</p>
-                <br/>
-            </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="ph-container-grey">
-            <div class="ph-content-container">
-                <div class="ph-spliter">
-                    <h5>Projects</h5><br/>
-                    <a target="_blank" href="https://github.com/PhentomPT/PhentomCMS">Wow CMS</a><br/>
-                </div>
-
-                <div class="ph-spliter">
-                    <h5>Tech Hub</h5><br/>
-                    <a target="_blank" href="https://github.com/PhentomPT">Github</a><br/>
-                </div>
-
-                <div class="ph-props">
-                    <a href="" uk-scroll><div class="ph-arrow-up"></div></a>
-                    <br/><br/>
-
-                    <div class="ph-footer-separator-left"></div>
-                    <span id="ph-phentom">Phentom</span>
-                    <div class="ph-footer-separator-right"></div>
-                </div>
-            </div>
-        </div>
+      </div>
     </body>
 </html>
