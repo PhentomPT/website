@@ -11,24 +11,32 @@
     <link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff|Roboto+Condensed" rel="stylesheet">
     <link href="https://cdn.materialdesignicons.com/5.0.45/css/materialdesignicons.min.css" rel="stylesheet">
     <link href="src/css/main.min.css" rel="stylesheet">
+
+    <script>
+      if (window && window.matchMedia('(prefers-color-scheme: dark)')) {
+        const link = document.querySelector("link[rel*='icon']") || document.createElement('link')
+        
+        link.type = 'image/x-icon'
+        link.rel = 'shortcut icon'
+        link.href = '/src/images/favicon-light.png'
+
+        document.getElementsByTagName('head')[0].appendChild(link)
+      }
+    </script>
   </head>
     <body>
       <div class="bubble bubble--first"></div>
       <div class="bubble bubble--second"></div>
-      <!-- <div class="bubble bubble--third"></div> -->
+      <div class="bubble bubble--third"></div>
       
       <div class="content">
         <nav>
-          <a href="mailto: phentom.net@gmail.com">
-            <div class="contact-me">
-              <span class="mdi mdi-comment"></span>Contact Me</a>
-            </div>
+          <a href="mailto: phentom.net@gmail.com" class="contact-me">
+            <span class="mdi mdi-comment"></span>Contact Me
           </a>
 
-          <a href="https://github.com/PhentomPT">
-            <div class="social-link">
-              <span class="mdi mdi-github"></span>
-            </div>
+          <a href="https://github.com/PhentomPT" class="social-link">
+            <span class="mdi mdi-github"></span>
           </a>
         </nav>
 
