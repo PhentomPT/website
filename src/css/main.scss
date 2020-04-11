@@ -221,7 +221,7 @@ a {
   }
 }
 
-@media (max-width: 1000px) {
+@media (min-width: 600px) and (max-width: 1000px) {
   .bubble {
     width: 6.25rem;
     height: 6.25rem;
@@ -241,6 +241,46 @@ a {
       left: 18.75rem;
     }
   }
+
+  .content {
+    padding: 0 2rem;
+
+    .heading {
+      width: 100%;
+      text-align: center;
+    }
+    
+    .block {
+      flex-direction: column;
+
+      .about-me {
+        align-self: flex-start;
+        margin-top: 4rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .bubble {
+    width: 6.25rem;
+    height: 6.25rem;
+
+    &--first {
+      top: 6rem;
+      left: -3.125rem;
+    }
+  
+    &--second {
+      top: 9.125rem;
+      left: -3.125rem;
+    }
+  
+    &--third {
+      display: none;
+    }
+  }
+
   .content {
     padding: 0 2rem;
 
